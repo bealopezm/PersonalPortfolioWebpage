@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  background-color: #EBBAB9;
+  position: absolute;
+  top: 0;
+  position: fixed;
+  width: 100vw;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  padding: 8px 50px;
+  justify-content: end;
+}
+
+li {
+  margin: 5px 10px;
+  list-style: none;
+}
+
+li a {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: x-large;
+  color: white;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  background-color: #698996;
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+h1 {
+  margin-block-end: 0.23em;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+p {
+  margin: 0;
+  font-weight: 300;
+}
+
+.work {
+  background-color: #407076;
+  color: white;
+}
+
+h2 {
+  font-weight: bold;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.work h2 {
+  text-decoration: underline solid white 1px;
+}
+
+.proyectsWork {
+  height: calc(100% - 11rem);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.25rem 1rem;
+}
+
+.proyectsWork a {
+  width: 19rem;
+  height: 18rem;
+  text-align: center;
+  background-color: #698996;
+  border-radius: 1rem;
+  align-self: center;
+  justify-self: center;
+}
+
+img {
+  width: calc(100% - 3rem);
+  height: calc(100% - 4rem);
+  object-fit: cover;
+  padding: 1rem 0;
+}
+
+a p {
+  padding: 2px 6px;
+  font-size: 1.5rem;
+  background-color: #EBBAB9;
+  border-radius: 1rem;
+}
+
+.contact {
+  background-color: #698996;
+  color: white;
+}
+
+.contactText {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact h2 {
+  margin-block-end: 0.23em;
+  font-size: 3rem;
+}
+
+.links {
+  padding: 1rem;
+}
+
+.links a {
+  margin: 1rem 3rem;
+}
+
+footer {
+  background-color: #698996;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  border-top: 3px solid #EBBAB9;
+}
+
+footer p {
+  padding: 0.5rem;
+}
+
+@media (max-height: 777px) {
+  .work {
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .proyectsWork {
+    grid-gap: 1rem 1rem;
+  }
+
+}
+
+
+@media (max-width: 993px) {
+  .work {
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .proyectsWork {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem 1.5rem;
+  }
+
+  .links a {
+    margin: 1rem 2rem;
+  }
+}
+
+@media (max-width: 674px) {
+  a {
+    font-size: 1rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .work {
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .proyectsWork {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem 1rem;
+  }
+
+  .work h2 {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .links a {
+    display: block;
+  }
+}
+
+@media (max-width: 317px) {
+  a {
+    font-size: 1rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .work {
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .proyectsWork {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem 1rem;
+  }
+
+  .work h2 {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .proyectsWork a {
+    width: 12rem;
+    height: 11rem;
+  }
+
+  img {
+    width: calc(100% - 1rem);
+    height: calc(100% - 3rem);
+    object-fit: cover;
+    padding: 0.6rem 0;
+  }
+
+  a p {
+    padding: 2px 6px;
+    font-size: 1rem;
+    background-color: #EBBAB9;
+    border-radius: 1rem;
+  }
+
+  .links a {
+    display: block;
+  }
+}
